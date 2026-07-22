@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Learning-Augmented Online Minimization with Dual Predictions",
+  "emoji": "🎯",
+  "space_id": null,
+  "paper": null,
+  "tags": [],
+  "updated_at": "2026-07-22T12:53:32+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Repro - Learning-Augmented Online Minimization with Dual Predictions",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "overview",
+        "title": "Overview",
+        "file": "pages/overview/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-c1-laminar-bound",
+        "title": "Claim C1 — laminar bound",
+        "file": "pages/claim-c1-laminar-bound/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-c2-mts-bellman-bound",
+        "title": "Claim C2 — MTS Bellman bound",
+        "file": "pages/claim-c2-mts-bellman-bound/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-c3-dual-stability",
+        "title": "Claim C3 — dual stability",
+        "file": "pages/claim-c3-dual-stability/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-c4-instability-controls",
+        "title": "Claim C4 — instability controls",
+        "file": "pages/claim-c4-instability-controls/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-c6-harmonic-lower-bound",
+        "title": "Claim C6 — harmonic lower bound",
+        "file": "pages/claim-c6-harmonic-lower-bound/page.md",
+        "children": []
+      },
+      {
+        "slug": "methods",
+        "title": "Methods",
+        "file": "pages/methods/page.md",
+        "children": []
+      },
+      {
+        "slug": "negative-controls",
+        "title": "Negative controls",
+        "file": "pages/negative-controls/page.md",
+        "children": []
+      },
+      {
+        "slug": "tests-and-gate",
+        "title": "Tests and gate",
+        "file": "pages/tests-and-gate/page.md",
+        "children": []
+      },
+      {
+        "slug": "conclusion",
+        "title": "Conclusion",
+        "file": "pages/conclusion/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 1280,
+  "revision": "1784724812446472917"
+}

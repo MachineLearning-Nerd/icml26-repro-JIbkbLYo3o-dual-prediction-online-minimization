@@ -1,0 +1,8 @@
+{
+  "paper": "JIbkbLYo3o",
+  "gate": "passed",
+  "tests_passed": true,
+  "publication_gate_passed": true,
+  "verified_claims": 5,
+  "scope": "Source-pinned theorem contract plus finite exact MTS, laminar-dual, instability, and harmonic certificates; not a new proof or a rerun of unreleased real-data experiments."
+}
