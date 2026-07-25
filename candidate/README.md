@@ -1,3 +1,13 @@
+---
+title: Dual Prediction Online Minimization Reproduction
+emoji: 📚
+colorFrom: blue
+colorTo: indigo
+sdk: static
+app_file: index.html
+pinned: false
+---
+
 # Current rigorous verification
 
 This is the canonical entrypoint for the candidate evaluator artifact. Current
