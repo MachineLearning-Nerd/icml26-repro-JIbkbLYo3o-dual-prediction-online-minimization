@@ -10,6 +10,8 @@ under the exact label **Historical rejected baseline**.
 - [Release and preservation audit](pages/release-audit/page.md)
 - [Pinned Python environment](pyproject.toml), [exact lock](uv.lock), and
   [cumulative executable gate](repro/src/run_publication_gate.py)
+- [Exact source payload](source/arxiv-2606.05380.base64.txt), verified against
+  SHA-256 `364d1b1d...077c` before use
 - [Historical rejected baseline](pages/overview/page.md)
 
 ## Current claims

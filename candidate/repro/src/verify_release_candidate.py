@@ -309,7 +309,9 @@ def audit() -> dict:
     assert c5["falsification_result"] == "NO_VALID_COUNTEREXAMPLE"
 
     source_payload = "".join(
-        files["source/arxiv-2606.05380.tar.b64"].read_text(encoding="ascii").split()
+        files["source/arxiv-2606.05380.base64.txt"]
+        .read_text(encoding="ascii")
+        .split()
     )
     import base64
 
@@ -320,7 +322,10 @@ def audit() -> dict:
 
     secret_hits: list[tuple[str, str]] = []
     for relative, path in files.items():
-        if not is_text_path(path) or path.suffix.lower() == ".b64":
+        if (
+            not is_text_path(path)
+            or relative == "source/arxiv-2606.05380.base64.txt"
+        ):
             continue
         payload = path.read_bytes()
         for name, pattern in SECRET_PATTERNS.items():

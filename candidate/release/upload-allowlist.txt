@@ -84,5 +84,5 @@ repro/tests/test_claim2_proof.py
 repro/tests/test_claim4_caching.py
 repro/tests/test_claim5_audit.py
 repro/tests/test_remaining_theory.py
-source/arxiv-2606.05380.tar.b64
+source/arxiv-2606.05380.base64.txt
 uv.lock

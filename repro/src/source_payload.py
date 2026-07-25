@@ -14,7 +14,7 @@ def source_bytes(root: Path) -> bytes:
     native = root / "source" / SOURCE_NAME
     if native.exists():
         return native.read_bytes()
-    encoded = root / "source" / f"{SOURCE_NAME}.b64"
+    encoded = root / "source" / "arxiv-2606.05380.base64.txt"
     payload = "".join(encoded.read_text(encoding="ascii").split())
     return base64.b64decode(payload, validate=True)
 
