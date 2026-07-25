@@ -1,0 +1,20 @@
+{
+  "paper": "arXiv:2606.05380",
+  "retrieval_utc_date": "2026-07-25",
+  "user_agent": "Mozilla/5.0 (compatible; OpenResearchReproduction/1.0; +https://github.com/MachineLearning-Nerd)",
+  "source_url": "https://export.arxiv.org/e-print/2606.05380",
+  "source_sha256": "364d1b1dabc7c09bce0839e214580e1beb08d78c2de7bdf2edd61fada706077c",
+  "source_bytes": 214949,
+  "repository_source_identical": true,
+  "html_url": "https://ar5iv.labs.arxiv.org/html/2606.05380",
+  "html_sha256": "c6ad56cbf54ab4fb76d38e0ecb832afb26a5dabe78933e109639a5554815cc58",
+  "html_bytes": 642437,
+  "anchors": {
+    "C1": "main.tex lines 188-198 and 347-425; labels thm:laminarsetcover and lem:lemdualboundlaminar",
+    "C2": "main.tex lines 525-608; label th:MTSBoundForBellmanError",
+    "C3": "main.tex lines 436-465 and 759-782; label lem:stabilityresult and Appendix primal-instability lemma",
+    "C4": "main.tex lines 783-805; Appendix sec:unstablecaching",
+    "C5": "main.tex lines 672-720; section sec:experiments",
+    "C6": "main.tex lines 807-900; Appendix sec:uselessduals"
+  }
+}

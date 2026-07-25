@@ -1,0 +1,23 @@
+{
+  "dataset": "ICML-2026-agent-repro/verdicts",
+  "dataset_revision": "d43c0a90d0ca2ea63de2bd378034fca6a844f1bf",
+  "dataset_last_modified": "2026-07-25T04:37:33.000Z",
+  "verdicts_sha256": "10a5e15839bf6a7f71d96d02426c33c8c8eb2d711117585d54b2dd2f6cd00b9f",
+  "filter": {
+    "field": "space_id",
+    "equals": "DineshAI/JIbkbLYo3o",
+    "match_count": 1
+  },
+  "record": {
+    "space_id": "DineshAI/JIbkbLYo3o",
+    "orid": "JIbkbLYo3o",
+    "paper_title": "Learning-Augmented Online Minimization with Dual Predictions",
+    "sha": "ca024e6adeaf755dd21a0b28b642d5a85d6df733",
+    "judged_at": "2026-07-24T18:14:09+00:00",
+    "model": "zai-org/GLM-5.2",
+    "score": "5/12",
+    "claim_verdicts": ["toy", "toy", "toy", "toy", "inconclusive", "toy"],
+    "overall": "The logbook provides finite numerical spot-checks of five theoretical claims on small instances (toy-scale theorem contract verification), but does not reproduce proofs or run any real-data experiments. Claim 5 (parking permit and bike-sharing experiments) is explicitly not addressed.",
+    "quality": "low"
+  }
+}
