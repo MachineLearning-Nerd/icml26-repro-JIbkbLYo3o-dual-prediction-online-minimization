@@ -1,0 +1,10 @@
+{
+  "claim_id": "C6",
+  "source_anchor": "main.tex:807-901; sec:uselessduals",
+  "source_sha256": "364d1b1dabc7c09bce0839e214580e1beb08d78c2de7bdf2edd61fada706077c",
+  "domain": "online fractional general set cover, m unit-cost sets",
+  "adversary": "adaptive against a fixed deterministic online algorithm",
+  "quantifiers": "every deterministic algorithm and every integer m>=1",
+  "target": "there is an instance with perfect optimal-dual prediction, OPT=1, and ALG>=H_m",
+  "verdict_rule": "corrected adversary derives H_m, perfect prediction is noninformative, independent checker passes, and printed H_m-1 construction is rejected"
+}

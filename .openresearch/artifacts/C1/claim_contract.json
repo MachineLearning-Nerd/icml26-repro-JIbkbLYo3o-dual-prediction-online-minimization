@@ -1,0 +1,11 @@
+{
+  "claim_id": "C1",
+  "source_anchor": "main.tex:389-395, 907-954; thm:laminarsetcover",
+  "source_sha256": "364d1b1dabc7c09bce0839e214580e1beb08d78c2de7bdf2edd61fada706077c",
+  "domain": "finite online fractional laminar set cover with nonnegative costs",
+  "algorithm": "Algorithm alg:nonrobustLaminarDual with an R-competitive subroutine A",
+  "quantifiers": "every instance, prediction, optimal dual y*, and 0<alpha<1",
+  "exact_target": "E[ALG] <= OPT/alpha + ||(hat_y-y*)+||_1/alpha + R||(y*-hat_y)+||_1/(1-alpha)",
+  "informal_consequence": "alpha=1/(1+epsilon) yields (1+epsilon)OPT + O(R eta/epsilon) for fixed epsilon>0",
+  "verdict_rule": "laminar charging, disjointification, exact algebra, independent checker, and rejecting control all pass"
+}

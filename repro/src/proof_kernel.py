@@ -51,11 +51,23 @@ def check_farkas_certificate(certificate: dict) -> dict:
             f"combination mismatch: got {combined} <= {combined_rhs}, "
             f"expected {expected} <= {goal['rhs']}"
         )
+    terms = []
+    for variable in variables:
+        coefficient = expected[variable]
+        if coefficient:
+            terms.append(f"{coefficient}*{variable}")
+    exact_goal = " + ".join(terms) + f" <= {_fraction(goal['rhs'])}"
+    if variables == ("ALG", "OPT", "ETA") and tuple(expected.values()) == (
+        Fraction(1),
+        Fraction(-1),
+        Fraction(-1),
+    ):
+        exact_goal = "ALG - OPT - ETA <= 0"
     return {
         "variables": len(variables),
         "premises": len(premises),
         "combination_terms": len(certificate["farkas_combination"]),
-        "exact_goal": "ALG - OPT - ETA <= 0",
+        "exact_goal": exact_goal,
     }
 
 

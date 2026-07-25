@@ -1,0 +1,8 @@
+{
+  "claim": "C3",
+  "verdict": "VERIFIED",
+  "dual_factor": 2,
+  "primal_ratio": "N+1 for every positive integer N",
+  "independent_checker": "PASS",
+  "negative_control": "appendix 2-alpha typo rejected"
+}

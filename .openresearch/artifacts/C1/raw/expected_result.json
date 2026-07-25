@@ -1,0 +1,7 @@
+{
+  "claim": "C1",
+  "verdict": "VERIFIED",
+  "exact_derived_bound": "E[ALG] <= (1+epsilon)OPT + (1+epsilon)over + R(1+epsilon)under/epsilon",
+  "independent_checker": "PASS",
+  "negative_control": "REJECTED_AS_INTENDED"
+}
