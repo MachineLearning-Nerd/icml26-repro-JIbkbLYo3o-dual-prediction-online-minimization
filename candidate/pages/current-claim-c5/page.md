@@ -9,7 +9,7 @@ and the paper's own figures do not constitute a rerun.
 | Route | Direct result | Why it does or does not resolve the claim |
 |---|---|---|
 | 1. Source figures | Four embedded PNGs hashed; 1.8x/4.4x prose aligns visually | Circular; not regenerated evidence |
-| 2. Full GHCN input | Official Central Park CSV, all 153 named years, threshold/leap audit | Exact PPP policies and rain rule absent |
+| 2. Full GHCN input | Official Central Park CSV, all 153 named years, raw 0/10/25 tenths-mm threshold and leap audit | Exact PPP policies and rain rule absent |
 | 3. Citi Bike manifest | Official 2023–2025 object set and compressed size resolved | Initial states, geographic bounds, ties, dual alignment absent |
 | 4. Falsification | No assumption-satisfying counterexample | Alternative guessed pipelines do not contradict the exact unreleased pipeline |
 

@@ -63,7 +63,9 @@ def ghcn_audit() -> dict:
         if 1869 <= year <= 2021 and row["DATE"][5:] != "02-29":
             by_year[year].append(row)
     summaries = []
-    thresholds = (0.0, 1.0, 2.5)
+    # GHCN-Daily PRCP is stored in tenths of millimeters. These correspond to
+    # >0 mm, >1 mm, and >2.5 mm definitions of a rainy day.
+    thresholds = (0, 10, 25)
     rain_totals = Counter()
     missing_prcp = 0
     for year in range(1869, 2022):
@@ -85,7 +87,7 @@ def ghcn_audit() -> dict:
             {
                 "year": year,
                 "rows_after_feb29_drop": len(year_rows),
-                "rain_days_by_mm_threshold": counts,
+                "rain_days_by_raw_tenths_mm_threshold": counts,
             }
         )
     return {
@@ -100,7 +102,8 @@ def ghcn_audit() -> dict:
             row["rows_after_feb29_drop"] == 365 for row in summaries
         ),
         "missing_prcp_cells": missing_prcp,
-        "rain_totals_by_mm_threshold": dict(rain_totals),
+        "prcp_unit": "tenths of millimeters",
+        "rain_totals_by_raw_tenths_mm_threshold": dict(rain_totals),
         "first_three_years": summaries[:3],
         "last_three_years": summaries[-3:],
         "unresolved_source_choices": [

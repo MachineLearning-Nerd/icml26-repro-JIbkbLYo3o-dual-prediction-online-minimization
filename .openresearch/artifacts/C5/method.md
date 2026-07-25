@@ -6,7 +6,8 @@
 2. **Full GHCN-input route.** Download the official Central Park station CSV
    with an explicit User-Agent; hash it; reconstruct all 153 named calendar
    years; audit 365-day completeness, missing precipitation, and rain-threshold
-   sensitivity. This reconstructs inputs but cannot select an unreleased PPP
+   sensitivity at raw thresholds 0/10/25 tenths of a millimeter. This
+   reconstructs inputs but cannot select an unreleased PPP
    policy.
 3. **Citi Bike route.** Resolve the official S3 object manifest for all named
    years and audit every decision needed before the dual/WFA/DC computation.
