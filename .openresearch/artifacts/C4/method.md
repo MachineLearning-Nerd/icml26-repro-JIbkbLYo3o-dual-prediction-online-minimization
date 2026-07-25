@@ -8,8 +8,9 @@ are tested.
 For cache size `k` and `q` Stage-3 cycles, Stage 2 contains `kq` cycles. The
 single replacement leaves page 1 in BlindOracle with a next-arrival time in
 the past. Stage 2 creates enough BlindOracle cost debt that LRU is strictly
-the lower-cost expert for every Stage-3 request. The combined cache equals
-LRU's and misses on all `q(k+1)` cyclic requests. Belady's exact offline
+the lower-cost expert for every Stage-3 request. After at most `k` warm-start
+hits, the combined cache follows LRU and incurs at least `q(k+1)-k` evictions.
+Belady's exact offline
 algorithm computes OPT. A calibrated sweep at `k=4,8,16,32,64` tests growth
 without selecting horizons from the claimed ratio formula.
 

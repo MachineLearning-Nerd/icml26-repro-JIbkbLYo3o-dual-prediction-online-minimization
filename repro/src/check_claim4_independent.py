@@ -12,7 +12,7 @@ for row in raw["rows"]:
     assert row["one_request_replacement"]
     assert row["incorrect_prediction_records"] == 2
     for result in row["tie_breaks"].values():
-        assert result["stage3_combined_cost"] == q * (k + 1)
+        assert result["stage3_combined_cost"] >= q * (k + 1) - k
         assert result["stage3_leaders"] == ["lru"]
         assert abs(result["ratio"] - result["combined_cost"] / row["offline_optimum"]) < 1e-12
 

@@ -8,9 +8,10 @@ That replacement affects two next-arrival records—not one scalar prediction—
 and leaves a stale page in BlindOracle's cache.
 
 Stage 2 makes LRU strictly better than BlindOracle. During every Stage-3
-request, the combined algorithm follows LRU and misses on all `q(k+1)`
-requests. Exact Belady OPT and a calibrated `k=4,8,16,32,64` sweep establish
-linear ratio growth, hence the claimed `Omega(log k)` collapse.
+request, the combined algorithm follows LRU and incurs at least
+`q(k+1)-k` evictions; the subtraction accounts for the warm-start cache.
+Exact Belady OPT and a calibrated `k=4,8,16,32,64` sweep establish linear
+ratio growth, hence the claimed `Omega(log k)` collapse.
 
 | Evidence | Result |
 |---|---|
