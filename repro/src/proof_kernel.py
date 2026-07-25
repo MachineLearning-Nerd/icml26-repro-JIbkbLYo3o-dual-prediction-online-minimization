@@ -57,10 +57,15 @@ def check_farkas_certificate(certificate: dict) -> dict:
         if coefficient:
             terms.append(f"{coefficient}*{variable}")
     exact_goal = " + ".join(terms) + f" <= {_fraction(goal['rhs'])}"
-    if variables == ("ALG", "OPT", "ETA") and tuple(expected.values()) == (
-        Fraction(1),
-        Fraction(-1),
-        Fraction(-1),
+    if (
+        expected.get("ALG") == Fraction(1)
+        and expected.get("OPT") == Fraction(-1)
+        and expected.get("ETA") == Fraction(-1)
+        and all(
+            coefficient == 0
+            for variable, coefficient in expected.items()
+            if variable not in {"ALG", "OPT", "ETA"}
+        )
     ):
         exact_goal = "ALG - OPT - ETA <= 0"
     return {
