@@ -1,0 +1,11 @@
+{
+  "claim_id": "C3",
+  "source_anchor": "main.tex:461-464, 759-770, 956-986",
+  "source_sha256": "364d1b1dabc7c09bce0839e214580e1beb08d78c2de7bdf2edd61fada706077c",
+  "algorithm": "alg:optimaldualalgorithm in the paper's fixed DFS leaf order",
+  "quantifiers": "all finite laminar families and all finite X,X'",
+  "dual_target": "||y_alg(X)-y_alg(X')||_1 <= 2 beta |X delta X'|",
+  "beta": "max over changed e of min cost among sets containing e",
+  "primal_target": "there is a one-element perturbation family whose optimal primal L1 ratio is unbounded",
+  "verdict_rule": "single-change telescoping, induction, primal uniqueness, independent checker, and typo rejection pass"
+}

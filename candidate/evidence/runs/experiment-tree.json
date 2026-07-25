@@ -1,0 +1,16 @@
+{
+  "fixed_command": "uv run --frozen python repro/src/run_publication_gate.py",
+  "environment": {
+    "manager": "uv",
+    "python": "3.12",
+    "lockfile": "uv.lock",
+    "repository_venvs": 1
+  },
+  "nodes": [
+    {"experiment_id": "f035e19b-a4fa-43e6-9234-3a3f3cb5198f", "purpose": "Historical judged baseline", "run_id": "4288e473-4073-4f4e-b3db-7d796fea300c", "git_sha": "de20014a16ff03c02e7866dad4eb05e5fce835ba", "backend": "local", "status": "PASS"},
+    {"experiment_id": "01d541d3-476b-40c0-a82d-f59713ac8382", "purpose": "Exact C2 MTS proof", "run_id": "637ce304-11c9-4478-8552-082978e4196f", "git_sha": "cd2f6d3ca1a732ea8e9bcb867b97cf51a76015f1", "backend": "local", "status": "PASS"},
+    {"experiment_id": "0bb5267c-c06e-43b0-a0de-2696d1a94679", "purpose": "C1/C3/C6 universal theory", "run_id": "f4893104-c0c9-4e01-bb31-1699b469f795", "git_sha": "2ea21d42e6c25dcf2866c7e056254f3c8d4b49f7", "backend": "local", "status": "PASS"},
+    {"experiment_id": "23c33eaf-035f-48d1-a773-33a9c993c900", "purpose": "Exact C4 combiner", "run_id": "6da5d53f-ecc3-4435-9102-1c226a9f1ec5", "git_sha": "a9bc4eec49b5c25aa5e88f452f6c85c5ac4e58f3", "backend": "local", "status": "PASS"},
+    {"experiment_id": "eb9f0629-5ee1-41ea-9f86-6f0c8993d3be", "purpose": "Corrected C5 four-route audit", "run_id": "8176b956-5948-4227-85e8-b8c42121a706", "git_sha": "8c8949291acf450afacf5dc4645d630af470b199", "backend": "hf cpu-upgrade", "status": "PASS"}
+  ]
+}

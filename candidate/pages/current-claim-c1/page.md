@@ -18,11 +18,15 @@ paper's fixed-epsilon big-O statement.
 | Independent checker | PASS, five exact rational epsilon values |
 | Negative control | Missing `1/(1-alpha)` factor rejected |
 | Command | `uv run --frozen python repro/src/run_publication_gate.py` |
+| Seeds | None; deterministic proof |
+| Run / Git | `f4893104-c0c9-4e01-bb31-1699b469f795` / `2ea21d42e6c25dcf2866c7e056254f3c8d4b49f7` |
+| CPU / runtime | Local, estimated 1 core, 8 visible logical CPUs, 0.616 s |
 
-[Contract](../../.openresearch/artifacts/C1/claim_contract.json) ·
-[source audit](../../.openresearch/artifacts/C1/source_audit.md) ·
-[method](../../.openresearch/artifacts/C1/method.md) ·
-[expected raw result](../../.openresearch/artifacts/C1/raw/expected_result.json) ·
+[Contract](../../evidence/C1/claim_contract.json) ·
+[source audit](../../evidence/C1/source_audit.md) ·
+[method](../../evidence/C1/method.md) ·
+[evaluation record](../../evidence/C1/EVAL.md) ·
+[raw result](../../evidence/runs/C1-C3-C6-theory.json) ·
 [verifier](../../repro/src/verify_remaining_theory.py) ·
 [independent checker](../../repro/src/check_remaining_theory_independent.py) ·
 [control](../../repro/src/run_remaining_theory_negative_controls.py)

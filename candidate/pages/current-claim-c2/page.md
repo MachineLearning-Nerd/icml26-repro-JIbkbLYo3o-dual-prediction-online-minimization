@@ -24,14 +24,22 @@ asserted because the displayed ratio is undefined.
 | Independent checker | PASS |
 | Negative control | Mutated `ETA` coefficient rejected by both checkers |
 | Seeds | None; deterministic proof |
+| Fixed command | `uv run --frozen python repro/src/run_publication_gate.py` |
 | Environment | CPython 3.12.11, dependency-free `uv.lock` |
+| Run / Git | `637ce304-11c9-4478-8552-082978e4196f` / `cd2f6d3ca1a732ea8e9bcb867b97cf51a76015f1` |
+| CPU / runtime | Local, estimated 1 core, 8 visible logical CPUs, 0.977 s |
 
 Raw contract:
-[`claim_contract.json`](../../.openresearch/artifacts/C2/claim_contract.json).
+[`claim_contract.json`](../../evidence/C2/claim_contract.json).
+Source audit and evaluation record:
+[`source_audit.md`](../../evidence/C2/source_audit.md) and
+[`EVAL.md`](../../evidence/C2/EVAL.md).
+Method:
+[`method.md`](../../evidence/C2/method.md).
 Proof certificate:
-[`proof_certificate.json`](../../.openresearch/artifacts/C2/proof_certificate.json).
+[`proof_certificate.json`](../../evidence/C2/proof_certificate.json).
 Expected machine-readable result:
-[`expected_result.json`](../../.openresearch/artifacts/C2/raw/expected_result.json).
+[`C2-MTS-proof.json`](../../evidence/runs/C2-MTS-proof.json).
 Primary verifier:
 [`verify_claim2_proof.py`](../../repro/src/verify_claim2_proof.py).
 Independent checker:

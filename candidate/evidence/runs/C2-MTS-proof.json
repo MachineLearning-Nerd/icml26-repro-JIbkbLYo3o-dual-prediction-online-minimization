@@ -1,0 +1,21 @@
+{
+  "claim_id": "C2",
+  "verdict": "VERIFIED",
+  "run_id": "637ce304-11c9-4478-8552-082978e4196f",
+  "git_sha": "cd2f6d3ca1a732ea8e9bcb867b97cf51a76015f1",
+  "command": "uv run --frozen python repro/src/run_publication_gate.py",
+  "proof_kind": "symbolic exact-rational certificate with structural induction",
+  "derived_goal": "ALG - OPT - ETA <= 0",
+  "ratio_scope": "OPT > 0",
+  "independent_checker": "PASS",
+  "negative_control": "mutated ETA coefficient rejected by both checkers",
+  "seeds": [],
+  "compute": {
+    "estimated_cores": 1,
+    "backend": "local",
+    "allocation": "shared local machine, no dedicated allocation",
+    "visible_logical_cpus": 8,
+    "python": "3.12.11",
+    "runtime_seconds": 0.977
+  }
+}

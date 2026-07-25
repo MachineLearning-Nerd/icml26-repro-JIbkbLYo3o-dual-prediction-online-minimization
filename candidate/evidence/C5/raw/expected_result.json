@@ -1,0 +1,9 @@
+{
+  "claim": "C5",
+  "verdict": "BLOCKED",
+  "confidence": "LOW",
+  "routes_completed": 4,
+  "falsification_result": "NO_VALID_COUNTEREXAMPLE",
+  "independent_checker": "PASS",
+  "negative_control": "source/data availability promotion rejected"
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430">
+  <rect width="900" height="430" fill="#fbfaf7"/>
+  <text x="450" y="42" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="#17212b">Evidence changed, live score has not</text>
+  <text x="450" y="70" text-anchor="middle" font-family="Arial" font-size="15" fill="#52606d">Previous judge: 5/12 • best-supported forecast: 10/12 • C5 remains blocked</text>
+  <g font-family="Arial" font-size="16">
+    <text x="180" y="112" text-anchor="middle" fill="#52606d">Claim</text>
+    <text x="365" y="112" text-anchor="middle" fill="#52606d">Live points</text>
+    <text x="600" y="112" text-anchor="middle" fill="#52606d">Candidate evidence</text>
+  </g>
+  <g font-family="Arial" font-size="17" fill="#17212b">
+    <text x="180" y="158" text-anchor="middle">C1 laminar</text><text x="365" y="158" text-anchor="middle">1 / 2</text>
+    <text x="180" y="203" text-anchor="middle">C2 MTS</text><text x="365" y="203" text-anchor="middle">1 / 2</text>
+    <text x="180" y="248" text-anchor="middle">C3 stability</text><text x="365" y="248" text-anchor="middle">1 / 2</text>
+    <text x="180" y="293" text-anchor="middle">C4 caching</text><text x="365" y="293" text-anchor="middle">1 / 2</text>
+    <text x="180" y="338" text-anchor="middle">C5 real data</text><text x="365" y="338" text-anchor="middle">0 / 2</text>
+    <text x="180" y="383" text-anchor="middle">C6 lower bound</text><text x="365" y="383" text-anchor="middle">1 / 2</text>
+  </g>
+  <g font-family="Arial" font-size="15" font-weight="700">
+    <rect x="500" y="135" width="210" height="30" rx="15" fill="#d9eee1"/><text x="605" y="156" text-anchor="middle" fill="#24623b">VERIFIED • HIGH</text>
+    <rect x="500" y="180" width="210" height="30" rx="15" fill="#d9eee1"/><text x="605" y="201" text-anchor="middle" fill="#24623b">VERIFIED • HIGH</text>
+    <rect x="500" y="225" width="210" height="30" rx="15" fill="#f5e9c8"/><text x="605" y="246" text-anchor="middle" fill="#775913">VERIFIED • MEDIUM</text>
+    <rect x="500" y="270" width="210" height="30" rx="15" fill="#d9eee1"/><text x="605" y="291" text-anchor="middle" fill="#24623b">VERIFIED • HIGH</text>
+    <rect x="500" y="315" width="210" height="30" rx="15" fill="#f4d8d4"/><text x="605" y="336" text-anchor="middle" fill="#812b23">BLOCKED • LOW</text>
+    <rect x="500" y="360" width="210" height="30" rx="15" fill="#d9eee1"/><text x="605" y="381" text-anchor="middle" fill="#24623b">VERIFIED • HIGH</text>
+  </g>
+</svg>

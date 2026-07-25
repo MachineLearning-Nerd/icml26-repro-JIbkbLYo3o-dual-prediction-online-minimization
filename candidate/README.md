@@ -4,6 +4,14 @@ This is the canonical entrypoint for the candidate evaluator artifact. Current
 verification appears first. The judged finite-check pages are preserved later
 under the exact label **Historical rejected baseline**.
 
+- [Illustrated technical report](report.md)
+- [Self-contained marimo tutorial](notebooks/dual_prediction_reproduction.py)
+- [Current score forecast and visibility matrix](pages/current-summary/page.md)
+- [Release and preservation audit](pages/release-audit/page.md)
+- [Pinned Python environment](pyproject.toml), [exact lock](uv.lock), and
+  [cumulative executable gate](repro/src/run_publication_gate.py)
+- [Historical rejected baseline](pages/overview/page.md)
+
 ## Current claims
 
 - [Claim 1: exact laminar derivation](pages/current-claim-c1/page.md) — candidate
@@ -27,11 +35,11 @@ under the exact label **Historical rejected baseline**.
 
 | Claim | Canonical page | Code visible | Data inline | Raw link | Checker | Control | Exact claim tested | Reviewer verdict |
 |---|---|---|---|---|---|---|---|---|
-| C1 | [Current C1](pages/current-claim-c1/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
-| C2 | [Current C2](pages/current-claim-c2/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
-| C3 | [Current C3](pages/current-claim-c3/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
-| C4 | [Current C4](pages/current-claim-c4/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
+| C1 | [Current C1](pages/current-claim-c1/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | VERIFIED candidate |
+| C2 | [Current C2](pages/current-claim-c2/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | VERIFIED candidate |
+| C3 | [Current C3](pages/current-claim-c3/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | VERIFIED candidate |
+| C4 | [Current C4](pages/current-claim-c4/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | VERIFIED candidate |
 | C5 | [Current C5](pages/current-claim-c5/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | BLOCKED after four routes |
-| C6 | [Current C6](pages/current-claim-c6/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
+| C6 | [Current C6](pages/current-claim-c6/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | VERIFIED candidate |
 
 This candidate is not published and is not a new judge result.

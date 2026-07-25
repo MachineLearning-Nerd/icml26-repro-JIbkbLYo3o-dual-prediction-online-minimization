@@ -1,0 +1,31 @@
+{
+  "claim_id": "C4",
+  "verdict": "VERIFIED",
+  "run_id": "6da5d53f-ecc3-4435-9102-1c226a9f1ec5",
+  "git_sha": "a9bc4eec49b5c25aa5e88f452f6c85c5ac4e58f3",
+  "command": "uv run --frozen python repro/src/run_publication_gate.py",
+  "algorithm": "Wei deterministic Theorem 2.1 combiner, BlindOracle + LRU",
+  "request_replacements": 1,
+  "affected_next_arrival_records": 2,
+  "stage3_cycles": 32,
+  "rows": [
+    {"k": 4, "ratio_blind_tie": 3.95, "ratio_lru_tie": 3.925, "stage3_cost": 156, "stage3_leader": "lru"},
+    {"k": 8, "ratio_blind_tie": 7.833333333333333, "ratio_lru_tie": 7.805555555555555, "stage3_cost": 280, "stage3_leader": "lru"},
+    {"k": 16, "ratio_blind_tie": 15.588235294117647, "ratio_lru_tie": 15.558823529411764, "stage3_cost": 528, "stage3_leader": "lru"},
+    {"k": 32, "ratio_blind_tie": 31.09090909090909, "ratio_lru_tie": 31.060606060606062, "stage3_cost": 1024, "stage3_leader": "lru"},
+    {"k": 64, "ratio_blind_tie": 61.15151515151515, "ratio_lru_tie": 61.121212121212125, "stage3_cost": 2016, "stage3_leader": "lru"}
+  ],
+  "minimum_ratio_over_k_last_three": 0.9554924242424242,
+  "independent_checker": "PASS",
+  "negative_control": "identical anticipated/true sequence ratio below 3",
+  "tests": "10 cumulative PASS",
+  "seeds": [],
+  "compute": {
+    "estimated_cores": 1,
+    "backend": "local",
+    "allocation": "shared local machine, no dedicated allocation",
+    "visible_logical_cpus": 8,
+    "python": "3.12.11",
+    "runtime_seconds": 1.3780506250000144
+  }
+}

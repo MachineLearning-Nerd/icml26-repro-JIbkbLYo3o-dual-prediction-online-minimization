@@ -1,0 +1,42 @@
+{
+  "claim_id": "C5",
+  "verdict": "BLOCKED",
+  "confidence": "LOW",
+  "routes_completed": 4,
+  "run_id": "8176b956-5948-4227-85e8-b8c42121a706",
+  "hf_job": "DineshAI/6a644cb77ef3c08464968102",
+  "git_sha": "8c8949291acf450afacf5dc4645d630af470b199",
+  "command": "uv run --frozen python repro/src/run_publication_gate.py",
+  "ghcn": {
+    "station": "USW00094728",
+    "years": 153,
+    "complete_365_day_years": 153,
+    "missing_prcp_cells": 0,
+    "unit": "tenths of millimeters",
+    "rain_days": {">0mm": 18550, ">1mm": 14222, ">2.5mm": 11361}
+  },
+  "citibike": {
+    "official_objects": 25,
+    "objects_by_year": {"2023": 1, "2024": 12, "2025": 12},
+    "compressed_bytes": 19198058834,
+    "archives_downloaded": false
+  },
+  "falsification_result": "NO_VALID_COUNTEREXAMPLE",
+  "independent_checker": "PASS",
+  "promotion_control": "REJECTED_AS_INTENDED",
+  "unblockers": [
+    "author experiment code at the reported revision",
+    "processed PPP and daily Citi Bike instances with hashes",
+    "initial configurations, tie rules, and random seeds"
+  ],
+  "seeds": [],
+  "compute": {
+    "estimated_cores": 2,
+    "backend": "hf",
+    "flavor": "cpu-upgrade",
+    "actual_visible_logical_cpus": 64,
+    "python": "3.12.12",
+    "audit_runtime_seconds": 2.3651268270332366,
+    "cumulative_gate_runtime_seconds": 4.987625333014876
+  }
+}

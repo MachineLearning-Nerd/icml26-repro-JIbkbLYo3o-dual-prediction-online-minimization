@@ -16,13 +16,24 @@ universal-support element and is identical for every elimination order.
 | Independent checker | PASS |
 | Printed-construction control | Rejected with exact gap 1 |
 | Scope | Deterministic fractional algorithm; adaptive adversary |
+| Fixed command | `uv run --frozen python repro/src/run_publication_gate.py` |
 
-[Contract](../../.openresearch/artifacts/C6/claim_contract.json) ·
-[source audit](../../.openresearch/artifacts/C6/source_audit.md) ·
-[method](../../.openresearch/artifacts/C6/method.md) ·
-[expected raw result](../../.openresearch/artifacts/C6/raw/expected_result.json) ·
+[Contract](../../evidence/C6/claim_contract.json) ·
+[source audit](../../evidence/C6/source_audit.md) ·
+[method](../../evidence/C6/method.md) ·
+[evaluation record](../../evidence/C6/EVAL.md) ·
+[raw result](../../evidence/runs/C1-C3-C6-theory.json) ·
 [verifier](../../repro/src/verify_remaining_theory.py) ·
 [independent checker](../../repro/src/check_remaining_theory_independent.py) ·
 [control](../../repro/src/run_remaining_theory_negative_controls.py)
 
 No randomized-oblivious lower bound is claimed.
+
+Run `f4893104-c0c9-4e01-bb31-1699b469f795`, Git
+`2ea21d42e6c25dcf2866c7e056254f3c8d4b49f7`, local estimated one core,
+runtime 0.616 seconds. Exact rational regression rows cover `m=1..64`; the induction
+covers every integer `m>=1`. Seeds: none; the adversary and proof are
+deterministic.
+
+Limitation: the verdict is restricted to the paper's deterministic algorithm
+and adaptive-adversary scope.

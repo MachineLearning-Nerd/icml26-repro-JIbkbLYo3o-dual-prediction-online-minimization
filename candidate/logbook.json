@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Learning-Augmented Online Minimization with Dual Predictions",
+  "emoji": "🎯",
+  "space_id": "DineshAI/JIbkbLYo3o",
+  "paper": {
+    "arxiv_id": "2606.05380",
+    "openreview_id": "JIbkbLYo3o",
+    "title": "Learning-Augmented Online Minimization with Dual Predictions"
+  },
+  "tags": [
+    "icml2026-repro",
+    "paper-JIbkbLYo3o"
+  ],
+  "updated_at": "2026-07-25T00:00:00+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Current rigorous reproduction",
+    "file": "pages/index.md",
+    "children": [
+      {"slug": "current-summary", "title": "Current summary and forecast", "file": "pages/current-summary/page.md", "children": []},
+      {"slug": "current-claim-c1", "title": "Current C1 — exact laminar derivation", "file": "pages/current-claim-c1/page.md", "children": []},
+      {"slug": "current-claim-c2", "title": "Current C2 — exact MTS Bellman proof", "file": "pages/current-claim-c2/page.md", "children": []},
+      {"slug": "current-claim-c3", "title": "Current C3 — stability", "file": "pages/current-claim-c3/page.md", "children": []},
+      {"slug": "current-claim-c4", "title": "Current C4 — caching instability", "file": "pages/current-claim-c4/page.md", "children": []},
+      {"slug": "current-claim-c5", "title": "Current C5 — BLOCKED real-data audit", "file": "pages/current-claim-c5/page.md", "children": []},
+      {"slug": "current-claim-c6", "title": "Current C6 — harmonic lower bound", "file": "pages/current-claim-c6/page.md", "children": []},
+      {"slug": "release-audit", "title": "Release audit", "file": "pages/release-audit/page.md", "children": []},
+      {
+        "slug": "historical-rejected-baseline",
+        "title": "Historical rejected baseline",
+        "file": "pages/overview/page.md",
+        "children": [
+          {"slug": "claim-c1-laminar-bound", "title": "Historical C1 finite checks", "file": "pages/claim-c1-laminar-bound/page.md", "children": []},
+          {"slug": "claim-c2-mts-bellman-bound", "title": "Historical C2 finite checks", "file": "pages/claim-c2-mts-bellman-bound/page.md", "children": []},
+          {"slug": "claim-c3-dual-stability", "title": "Historical C3 finite checks", "file": "pages/claim-c3-dual-stability/page.md", "children": []},
+          {"slug": "claim-c4-instability-controls", "title": "Historical C4 finite checks", "file": "pages/claim-c4-instability-controls/page.md", "children": []},
+          {"slug": "claim-c6-harmonic-lower-bound", "title": "Historical C6 finite checks", "file": "pages/claim-c6-harmonic-lower-bound/page.md", "children": []},
+          {"slug": "methods", "title": "Historical methods", "file": "pages/methods/page.md", "children": []},
+          {"slug": "negative-controls", "title": "Historical negative controls", "file": "pages/negative-controls/page.md", "children": []},
+          {"slug": "tests-and-gate", "title": "Historical tests and gate", "file": "pages/tests-and-gate/page.md", "children": []},
+          {"slug": "conclusion", "title": "Historical conclusion", "file": "pages/conclusion/page.md", "children": []}
+        ]
+      }
+    ]
+  },
+  "agent_view_tokens": 1280,
+  "revision": "candidate-prepublication"
+}

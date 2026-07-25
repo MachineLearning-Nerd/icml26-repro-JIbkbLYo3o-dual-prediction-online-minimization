@@ -1,0 +1,8 @@
+{
+  "claim": "C6",
+  "verdict": "VERIFIED",
+  "scope": "deterministic fractional algorithm, adaptive adversary",
+  "corrected_bound": "H_m",
+  "printed_bound": "H_m-1",
+  "negative_control": "REJECTED_AS_INTENDED"
+}

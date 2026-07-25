@@ -1,0 +1,41 @@
+{
+  "run_id": "f4893104-c0c9-4e01-bb31-1699b469f795",
+  "git_sha": "2ea21d42e6c25dcf2866c7e056254f3c8d4b49f7",
+  "command": "uv run --frozen python repro/src/run_publication_gate.py",
+  "claims": {
+    "C1": {
+      "verdict": "VERIFIED",
+      "exact_bound": "E[ALG] <= OPT/alpha + over/alpha + R*under/(1-alpha)",
+      "epsilon_consequence": "E[ALG] <= (1+epsilon)OPT + (1+epsilon)over + R(1+epsilon)under/epsilon"
+    },
+    "C3": {
+      "verdict": "VERIFIED",
+      "single_change_factor": 2,
+      "proof_cone_points_independent": 1364,
+      "sharp_factor": 2,
+      "primal_family_ratios": [2, 3, 6, 18, 102],
+      "appendix_typo_control": "REJECTED_AS_INTENDED"
+    },
+    "C6": {
+      "verdict": "VERIFIED",
+      "scope": "deterministic fractional algorithm, adaptive adversary",
+      "parametric_domain": "every integer m>=1",
+      "exact_rows": "m=1..64",
+      "printed_construction": "H_m-1",
+      "corrected_construction": "H_m",
+      "negative_control_gap": 1
+    }
+  },
+  "independent_checker": "PASS",
+  "negative_controls": "REJECTED_AS_INTENDED",
+  "tests": "6 PASS",
+  "seeds": [],
+  "compute": {
+    "estimated_cores": 1,
+    "backend": "local",
+    "allocation": "shared local machine, no dedicated allocation",
+    "visible_logical_cpus": 8,
+    "python": "3.12.11",
+    "runtime_seconds": 0.6160891670001547
+  }
+}
