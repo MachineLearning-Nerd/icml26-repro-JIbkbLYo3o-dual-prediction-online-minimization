@@ -29,6 +29,7 @@ tie rules, or seeds. All formal runs use Python 3.12, one repository `.venv`,
 the committed `uv.lock`, and CPU only.
 
 - [Illustrated technical report](reports/dual-prediction-reproduction/report.md)
+- [Final release and provenance report](reports/dual-prediction-reproduction/release-report.md)
 - [Self-contained marimo tutorial](notebooks/dual_prediction_reproduction.py)
 - Local notebook: `marimo edit notebooks/dual_prediction_reproduction.py`
 
