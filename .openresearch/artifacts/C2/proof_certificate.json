@@ -1,0 +1,43 @@
+{
+  "certificate_version": 1,
+  "claim_id": "C2",
+  "arithmetic": "exact rational linear arithmetic",
+  "variables": ["ALG", "OPT", "ETA", "P0", "PT", "SUM_MAX", "SUM_MIN"],
+  "premises": [
+    {
+      "name": "algorithm_upper_after_telescoping",
+      "relation": "le",
+      "coefficients": {"ALG": "1", "P0": "-1", "PT": "1", "SUM_MAX": "-1"},
+      "rhs": "0"
+    },
+    {
+      "name": "optimum_lower_after_telescoping",
+      "relation": "le",
+      "coefficients": {"OPT": "-1", "P0": "1", "PT": "-1", "SUM_MIN": "1"},
+      "rhs": "0"
+    },
+    {
+      "name": "eta_definition",
+      "relation": "eq",
+      "coefficients": {"ETA": "-1", "SUM_MAX": "1", "SUM_MIN": "-1"},
+      "rhs": "0"
+    }
+  ],
+  "goal": {
+    "relation": "le",
+    "coefficients": {"ALG": "1", "OPT": "-1", "ETA": "-1"},
+    "rhs": "0"
+  },
+  "farkas_combination": [
+    {"premise": "algorithm_upper_after_telescoping", "weight": "1"},
+    {"premise": "optimum_lower_after_telescoping", "weight": "1"},
+    {"premise": "eta_definition", "weight": "1"}
+  ],
+  "structural_obligations": [
+    "The algorithm argmin gives its one-step equality.",
+    "Any offline path gives the corresponding one-step lower bound.",
+    "Both path sums telescope by induction for arbitrary T >= 1.",
+    "Each discrepancy is bounded above by its coordinate maximum and below by its coordinate minimum.",
+    "w_hat_T is zero on both terminal states, so the terminal potentials agree."
+  ]
+}

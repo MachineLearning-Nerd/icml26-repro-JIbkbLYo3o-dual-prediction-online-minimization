@@ -1,0 +1,11 @@
+{
+  "claim_id": "C2",
+  "verdict": "VERIFIED",
+  "proof_kind": "symbolic exact-rational certificate with structural induction",
+  "additive_bound": "ALG <= OPT + ETA",
+  "ratio_scope": "OPT > 0",
+  "primary_certificate": "PASS",
+  "independent_checker": "PASS",
+  "negative_control": "REJECTED_AS_INTENDED",
+  "historical_trace_regression": "required"
+}

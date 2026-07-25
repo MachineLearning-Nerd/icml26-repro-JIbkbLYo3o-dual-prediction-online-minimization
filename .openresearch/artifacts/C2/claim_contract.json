@@ -1,0 +1,23 @@
+{
+  "claim_id": "C2",
+  "title": "MTS dual-prediction Bellman bound",
+  "source": {
+    "paper": "arXiv:2606.05380",
+    "source_sha256": "364d1b1dabc7c09bce0839e214580e1beb08d78c2de7bdf2edd61fada706077c",
+    "anchor": "main.tex label th:MTSBoundForBellmanError, lines 525-608"
+  },
+  "quantifiers": [
+    "Every finite metric space (M,d)",
+    "Every finite horizon T >= 1",
+    "Every initial state s_0 in M",
+    "Every sequence of nonnegative extended-real service costs c_t",
+    "Every prediction sequence w_hat_0,...,w_hat_T with w_hat_T identically zero",
+    "Every tie-breaking choice from the algorithm argmin"
+  ],
+  "algorithm": "At t choose s_t in argmin_s d(s_{t-1},s)+c_t(s)+w_hat_t(s).",
+  "error": "eta=sum_t span(B^{c_t}(w_hat_t)-w_hat_{t-1}), where span(v)=max(v)-min(v).",
+  "additive_conclusion": "ALG <= OPT + eta",
+  "ratio_conclusion": "ALG/OPT <= 1 + eta/OPT when OPT > 0",
+  "zero_optimum_boundary": "When OPT=0 the additive conclusion remains meaningful; the displayed ratio is undefined and is not asserted.",
+  "verdict_rule": "VERIFIED only if the exact symbolic certificate, independent checker, source anchors, and rejection control all pass."
+}
