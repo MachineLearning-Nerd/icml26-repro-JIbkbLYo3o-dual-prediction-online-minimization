@@ -14,6 +14,9 @@ subprocess.run([sys.executable, "repro/src/run_remaining_theory_negative_control
 subprocess.run([sys.executable, "repro/src/verify_claim4_caching.py"], cwd=ROOT, check=True)
 subprocess.run([sys.executable, "repro/src/check_claim4_independent.py"], cwd=ROOT, check=True)
 subprocess.run([sys.executable, "repro/src/run_claim4_negative_controls.py"], cwd=ROOT, check=True)
+subprocess.run([sys.executable, "repro/src/audit_claim5_real_data.py"], cwd=ROOT, check=True)
+subprocess.run([sys.executable, "repro/src/check_claim5_independent.py"], cwd=ROOT, check=True)
+subprocess.run([sys.executable, "repro/src/run_claim5_negative_control.py"], cwd=ROOT, check=True)
 subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", "repro/tests", "-v"], cwd=ROOT, check=True)
 v = json.loads((ROOT / "outputs/verification.json").read_text())
 c2 = json.loads((ROOT / "outputs/claim2_proof_verification.json").read_text())
@@ -25,6 +28,9 @@ remaining_controls = json.loads((ROOT / "outputs/remaining_theory_negative_contr
 c4 = json.loads((ROOT / "outputs/claim4_caching_verification.json").read_text())
 c4_independent = json.loads((ROOT / "outputs/claim4_independent_checker.json").read_text())
 c4_control = json.loads((ROOT / "outputs/claim4_negative_control.json").read_text())
+c5 = json.loads((ROOT / "outputs/claim5_four_route_audit.json").read_text())
+c5_independent = json.loads((ROOT / "outputs/claim5_independent_checker.json").read_text())
+c5_control = json.loads((ROOT / "outputs/claim5_negative_control.json").read_text())
 assert v["verified_claims"] == 5 and v["falsified_claims"] == 0
 assert c2["verdict"] == "VERIFIED"
 assert c2_independent["status"] == "PASS"
@@ -35,6 +41,9 @@ assert remaining_controls["status"] == "REJECTED_AS_INTENDED"
 assert c4["verdict"] == "VERIFIED"
 assert c4_independent["status"] == "PASS"
 assert c4_control["status"] == "REJECTED_AS_INTENDED"
+assert c5["verdict"] == "BLOCKED" and c5["routes_completed"] == 4
+assert c5_independent["status"] == "PASS"
+assert c5_control["status"] == "REJECTED_AS_INTENDED"
 gate = {
     "paper": "JIbkbLYo3o",
     "gate": "passed",
@@ -46,14 +55,15 @@ gate = {
         "C2": "VERIFIED",
         "C3": "VERIFIED",
         "C4": "VERIFIED",
+        "C5": "BLOCKED",
         "C6": "VERIFIED",
     },
     "historical_regression": "PASS",
     "scope": v["scope"],
     "compute": {
-        "estimated_cores": 1,
-        "selected_flavor": "local (no flavor)",
-        "allocation": "shared local machine; no dedicated CPU allocation",
+        "estimated_cores": 2,
+        "selected_flavor": "hf cpu-upgrade",
+        "allocation": "Hugging Face Jobs CPU allocation; detected at runtime",
         "visible_logical_cpus": os.cpu_count(),
         "python": platform.python_version(),
         "runtime_seconds": time.perf_counter() - started,

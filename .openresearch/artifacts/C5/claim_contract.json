@@ -1,0 +1,10 @@
+{
+  "claim_id": "C5",
+  "source_anchor": "main.tex:672-720; Figures pppexperiments and two-plots",
+  "source_sha256": "364d1b1dabc7c09bce0839e214580e1beb08d78c2de7bdf2edd61fada706077c",
+  "parking_target": "at K=9, randomized/augmented=1.8 and deterministic/augmented=4.4 on 153 Central Park GHCN years",
+  "bike_target": "dual-prediction k-server outperforms WFA and DC for k=2..9 on 2025 Manhattan Citi Bike days after training on 2023-2024",
+  "quantifiers": "the exact authors' algorithms, preprocessing, initial states, ties, randomization, and daily instances",
+  "full_credit_rule": "VERIFIED only by regenerated raw metrics from the exact contract, or FALSIFIED by an assumption-satisfying counterexample",
+  "blocked_rule": "four distinct routes complete but missing experiment semantics prevent either verdict"
+}
