@@ -13,7 +13,9 @@ under the exact label **Historical rejected baseline**.
   rejection control.
 - [Claim 3: dual stability and primal instability](pages/current-claim-c3/page.md)
   — candidate verdict `VERIFIED`; parametric proof and typo rejection.
-- Claim 4 — exact caching audit pending.
+- [Claim 4: exact caching instability](pages/current-claim-c4/page.md) —
+  candidate verdict `VERIFIED` for Wei's deterministic combiner; one request
+  replacement, exact Belady control, and calibrated asymptotic sweep.
 - Claim 5 — faithful data experiment pending.
 - [Claim 6: corrected general set-cover lower bound](pages/current-claim-c6/page.md)
   — candidate verdict `VERIFIED` in deterministic/adaptive scope; the
@@ -26,7 +28,7 @@ under the exact label **Historical rejected baseline**.
 | C1 | [Current C1](pages/current-claim-c1/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
 | C2 | [Current C2](pages/current-claim-c2/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
 | C3 | [Current C3](pages/current-claim-c3/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
-| C4 | Pending | No | No | No | No | No | No | Not release-ready |
+| C4 | [Current C4](pages/current-claim-c4/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
 | C5 | Pending | No | No | No | No | No | No | Not release-ready |
 | C6 | [Current C6](pages/current-claim-c6/page.md) | Yes | Yes | Yes | Yes | Yes | Yes | Pending blind review |
 

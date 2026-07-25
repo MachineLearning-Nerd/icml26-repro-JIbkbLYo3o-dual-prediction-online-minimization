@@ -1,0 +1,13 @@
+{
+  "claim_id": "C4",
+  "paper_anchor": "main.tex:783-805; sec:unstablecaching",
+  "paper_source_sha256": "364d1b1dabc7c09bce0839e214580e1beb08d78c2de7bdf2edd61fada706077c",
+  "reference": "Alexander Wei, Better and Simpler Learning-Augmented Online Caching, Theorem 2.1 deterministic combiner",
+  "reference_pdf_sha256": "1fe5b1c188d73a9c34ea744b9d5e55482437a3549429c4aedd2dde8d1b39a5c2",
+  "algorithm": "BlindOracle combined with LRU by following the lower-cost simulated expert",
+  "domain": "unit-cost paging with cache size k>=3 and deterministic tie breaking",
+  "quantifiers": "an explicit family for unbounded k and horizon",
+  "perturbation": "true and anticipated request sequences differ at exactly one request",
+  "target": "combined competitive ratio is Omega(k), and therefore Omega(log k)",
+  "verdict_rule": "exact implementation, calibrated k sweep, independent trace checker, no-perturbation control, and parametric argument all pass"
+}
