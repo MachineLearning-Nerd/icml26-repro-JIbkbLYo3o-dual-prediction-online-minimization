@@ -57,10 +57,12 @@ def is_text_path(path: Path) -> bool:
 
 
 def relative_files() -> dict[str, Path]:
+    ignored_directories = {".cache", ".venv", "__pycache__", "outputs"}
     return {
         path.relative_to(CANDIDATE).as_posix(): path
         for path in CANDIDATE.rglob("*")
-        if path.is_file() and "__pycache__" not in path.parts
+        if path.is_file()
+        and not ignored_directories.intersection(path.relative_to(CANDIDATE).parts)
     }
 
 
