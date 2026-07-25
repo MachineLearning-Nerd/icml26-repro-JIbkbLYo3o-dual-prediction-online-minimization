@@ -30,6 +30,18 @@ for k in (4, 8, 16, 32, 64):
                 {row["leader"] for row in run["trace"][instance["stage3_start"] :]}
             ),
         }
+        print(
+            json.dumps(
+                {
+                    "diagnostic": "C4_stage3",
+                    "k": k,
+                    "tie": tie,
+                    "expected_all_misses": q * (k + 1),
+                    **tie_results[tie],
+                }
+            ),
+            flush=True,
+        )
         assert stage3_cost == q * (k + 1)
         assert tie_results[tie]["stage3_leaders"] == ["lru"]
     assert instance["differing_requests"] == 1
